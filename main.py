@@ -1,7 +1,14 @@
-from utils.Cpf import Cpf
+from utils.Telefone import Telefone
 from utils.Cnpj import Cnpj
+from utils.Cpf import Cpf
+from utils.Datas import Data
 
-cpf = Cpf("15316264754", 'cpf')
-cnpj = Cnpj('35379838000112', 'cnpj')
-print(cpf)
-print(cnpj)
+telefone = Telefone("5585985670102")
+cnpj = Cnpj("12345678910112", "cnpj")
+cpf = Cpf("12561263611", "cpf")
+data = Data()
+
+print(telefone)
+print(cnpj) # invalido!
+print(cpf) # invalido!
+print(data)
