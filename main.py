@@ -1,14 +1,17 @@
-from utils.Telefone import Telefone
-from utils.Cnpj import Cnpj
+from utils.Cep import Cep
 from utils.Cpf import Cpf
+from utils.Cnpj import Cnpj
 from utils.Datas import Data
+from utils.Telefone import Telefone
 
-telefone = Telefone("5585985670102")
-cnpj = Cnpj("12345678910112", "cnpj")
-cpf = Cpf("12561263611", "cpf")
-data = Data()
+cep = Cep("25870141")
+# cpf = Cpf("12561263611", "cpf")
+# cnpj = Cnpj("12345678910112", "cnpj")
+# data = Data()
+# telefone = Telefone("5585985670102")
 
-print(telefone)
-print(cnpj) # invalido!
-print(cpf) # invalido!
-print(data)
+print(cep)
+# print(cpf) # invalido!
+# print(cnpj) # invalido!
+# print(data)
+# print(telefone)
