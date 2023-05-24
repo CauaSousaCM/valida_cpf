@@ -17,3 +17,4 @@ class Cep:
         
     def format_cep(self) -> str:
         return f"{self.cep[:5]}-{self.cep[5:]}"
+    
