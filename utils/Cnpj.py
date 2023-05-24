@@ -13,10 +13,10 @@ class Cnpj(Factory):
             )
         
     def format_cnpj(self) -> None:
-        mascara = CNPJ()
-        return mascara.mask(self.cnpj)
+        cnpj_mask = CNPJ()
+        return cnpj_mask.mask(self.cnpj)
     
     def __str__(self) -> str:
-        if self.tipo_documento.upper() == 'CNPJ':
+        if self.doc_type.upper() == 'CNPJ':
             return self.format_cnpj()
     
