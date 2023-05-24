@@ -1,3 +1,7 @@
+from configs.settings import URL
+
+import requests
+
 class Cep:
     def __init__(self, cep: str) -> None:
         self.cep = str(cep)
@@ -18,3 +22,13 @@ class Cep:
     def format_cep(self) -> str:
         return f"{self.cep[:5]}-{self.cep[5:]}"
     
+    def cep_request_api(self):
+        url = f"{URL}{self.cep}/json"
+        r = requests.get(url)
+        data = r.json()
+        return (
+            data['bairro'], 
+            data['localidade'],
+            data['uf']
+        )
+        
